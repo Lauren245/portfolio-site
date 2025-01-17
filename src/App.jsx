@@ -7,7 +7,9 @@ function App() {
   return (
     <>
         <Nav />
-        <Outlet />
+        <main className='mx-3'>
+          <Outlet />
+        </main>
     </>
 
   )
