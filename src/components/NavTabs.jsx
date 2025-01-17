@@ -10,7 +10,7 @@ function NavTabs(){
                     to='/'
                    className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
                 > 
-                    Home
+                    About
                 </Link>  
             </li>
             <li className = 'nav-item'>
