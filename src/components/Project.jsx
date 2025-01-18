@@ -1,5 +1,5 @@
 
-function PortfolioCard(){
+function Project(){
     return(
         <div className='card' style={{width: '18rem'}}>
             <div className='card-body'>
@@ -12,4 +12,4 @@ function PortfolioCard(){
     );
 }
 
-export default PortfolioCard;
+export default Project;

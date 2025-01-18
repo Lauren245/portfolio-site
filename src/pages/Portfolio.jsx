@@ -1,10 +1,10 @@
-import PortfolioCard from "../components/PortfolioCard";
+import Project from "../components/Project";
 
 export default function Portfolio(){
     return (
         <div>
             <h1>My Portfolio</h1>
-            <PortfolioCard />
+            <Project />
         </div>
     );
 }
