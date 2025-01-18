@@ -1,0 +1,5 @@
+footer a:hover{
+    /* TODO: Change this color to whatever ends up being the accent theme for the site.*/
+    color:#5d83d4 !important;
+    text-decoration: none !important;
+}
