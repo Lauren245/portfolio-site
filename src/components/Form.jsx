@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { validateEmail  } from '../utils/validation';
+
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../css/Form.css';
@@ -34,6 +36,9 @@ function Form(){
     const handleFormSubmit = (e) => {
        e.preventDefault(); 
        //TODO: add call to validation code if desired
+       if(!validateEmail(email) || !name){
+            setErrorMessage("invalid name or email")
+       }
        //This will eventually redirect to a page with contact information on it, but that is for a later version
        setName('');
        setEmail('');
@@ -68,7 +73,7 @@ function Form(){
                     </div>
                 </div>
             </div>
-            
+
             <form onSubmit={handleFormSubmit}>
                 <div className="row">
                     <label htmlFor="name">
