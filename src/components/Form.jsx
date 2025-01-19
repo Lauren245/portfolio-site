@@ -1,5 +1,7 @@
 import { useState } from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import '../css/Form.css';
 
 function Form(){
 
@@ -7,6 +9,7 @@ function Form(){
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const [showToast, setShowToast] = useState(false);
 
     const handleInputChange = (e) => {
         const { target } = e;
@@ -35,10 +38,36 @@ function Form(){
        setName('');
        setEmail('');
        setMessage('');   
+       setShowToast(true);
+
+       //set a timeout for the toast message so it doesn't stick around forever
+       setTimeout(() => { setShowToast(false); }, 3000);
     };
     
     return(
         <>
+            <div className="toast-container">
+                <div
+                    className={`toast align-items-center text-white bg-success border-0 ${
+                        showToast ? "show" : "hide"
+                    }`}
+                    role="alert"
+                    aria-live="assertive"
+                    aria-atomic="true"
+                >
+                    <div className='d-flex'>
+                        <div className="toast-body">
+                            Message submitted Successfully!
+                        </div>
+                        <button
+                            type="button"
+                            className="btn-close btn-close-white me-2 m-auto"
+                            aria-label="Close"
+                            onClick={() => setShowToast(false)}
+                        ></button>
+                    </div>
+                </div>
+            </div>
             
             <form onSubmit={handleFormSubmit}>
                 <div className="row">
@@ -52,8 +81,7 @@ function Form(){
                         type="text"
                         placeholder="name"
                         required
-                    />
-                </div>
+                    /></div>
 
                 <div className="row">
                     <label htmlFor="email">
@@ -66,8 +94,7 @@ function Form(){
                         type="email"
                         placeholder="Email Address"
                         required
-                    />
-                </div>
+                    /></div>
 
                 <div className="row">
                     <label htmlFor="message">
@@ -82,8 +109,7 @@ function Form(){
                         cols={20} 
                         placeholder="Type your message here..."
                         required
-                    />
-                </div>
+                    /></div>
 
                 <div className="row">
                     <button type="submit">Submit</button>

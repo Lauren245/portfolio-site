@@ -1,0 +1,14 @@
+/* Toast Styling*/
+.toast-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    z-index: 1055;
+  }
+
+/* Form Styling */
+.row {
+    margin-bottom: 1rem;
+  }
