@@ -37,7 +37,7 @@ function Form(){
        e.preventDefault(); 
        //TODO: add call to validation code if desired
        if(!validateEmail(email) || !name){
-            setErrorMessage("invalid name or email")
+            setErrorMessage("invalid name or email");
        }
        //This will eventually redirect to a page with contact information on it, but that is for a later version
        setName('');
@@ -74,50 +74,68 @@ function Form(){
                 </div>
             </div>
 
-            <form onSubmit={handleFormSubmit}>
-                <div className="row">
-                    <label htmlFor="name">
-                        Name <span className="text-danger">*</span>
-                    </label>
-                    <input
-                        value={name}
-                        name="name"
-                        onChange={handleInputChange}
-                        type="text"
-                        placeholder="name"
-                        required
-                    /></div>
+            <form onSubmit={handleFormSubmit} className="pt-4">
+                <div className="row g-3 align-items-center pb-3">
+                    <div className="col-2">
+                        <label htmlFor="name" className="col-form-auto">
+                            Name <span className="text-danger">*</span>
+                        </label>
+                    </div>
+                    <div className="col-6">
+                        <input
+                            className="form-control"
+                            value={name}
+                            name="name"
+                            onChange={handleInputChange}
+                            type="text"
+                            placeholder="name"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div className="row g-3 align-items-center pb-3">
+                    <div className="col-2">
+                        <label htmlFor="email" className="col-form-auto">
+                            Email Address <span className="text-danger">*</span>
+                        </label>
+                    </div>
+                    <div className="col-6">
+                        <input 
+                            className="form-control"
+                            value={email}
+                            name="email"
+                            onChange={handleInputChange}
+                            type="email"
+                            placeholder="Email Address"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div className="row g-3 pb-3">
+                    <div className="col-2">
+                        <label htmlFor="message" className="col-form-label">
+                            Message <span className="text-danger">*</span>
+                        </label>
+                    </div>
+                    <div className="col-6">
+                        <textarea 
+                                className="form-control"
+                                id="message" 
+                                value={message}
+                                name="message" 
+                                onChange={handleInputChange}
+                                rows={4} 
+                                cols={20} 
+                                placeholder="Type your message here..."
+                                required
+                            />
+                    </div>
+                </div>
 
                 <div className="row">
-                    <label htmlFor="email">
-                        Email Address <span className="text-danger">*</span>
-                    </label>
-                    <input 
-                        value={email}
-                        name="email"
-                        onChange={handleInputChange}
-                        type="email"
-                        placeholder="Email Address"
-                        required
-                    /></div>
-
-                <div className="row">
-                    <label htmlFor="message">
-                        Message <span className="text-danger">*</span>
-                    </label>
-                    <textarea 
-                        id="message" 
-                        value={message}
-                        name="message" 
-                        onChange={handleInputChange}
-                        rows={4} 
-                        cols={20} 
-                        placeholder="Type your message here..."
-                        required
-                    /></div>
-
-                <div className="row">
-                    <button type="submit">Submit</button>
+                    <span className="align-items-center"><button type="submit" className='btn btn-primary col-6'>Submit</button></span>
                 </div>                
             </form>
             {errorMessage && (
