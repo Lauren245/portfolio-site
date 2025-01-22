@@ -48,6 +48,7 @@ function Form(){
        if(!validateEmail(email) || !name){
             setErrorMessage("invalid name or email");
        }
+
        //This will eventually redirect to a page with contact information on it, but that is for a later version
        setName('');
        setEmail('');
