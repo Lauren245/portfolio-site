@@ -33,6 +33,15 @@ function Form(){
         };
     };
 
+    const handleOnBlur = () => {
+        if(!validateEmail(email) && email !== ""){
+            setErrorMessage("invalid email");
+        }
+        else{
+            setErrorMessage("");
+        }
+    }
+
     const handleFormSubmit = (e) => {
        e.preventDefault(); 
        //TODO: add call to validation code if desired
@@ -106,6 +115,7 @@ function Form(){
                             value={email}
                             name="email"
                             onChange={handleInputChange}
+                            onBlur={handleOnBlur}
                             type="email"
                             placeholder="Email Address"
                             required
@@ -140,7 +150,7 @@ function Form(){
             </form>
             {errorMessage && (
                 <div>
-                    <p className="error-message">{errorMessage}</p>
+                    <p className="error-message text-danger">{errorMessage}</p>
                 </div>
             )}
         </>
