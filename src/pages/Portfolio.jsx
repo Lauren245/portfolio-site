@@ -1,11 +1,11 @@
 import Project from "../components/Project";
-import projectsArr from '../utils/projectData';
+import projectsArr from "../utils/ProjectData";
 
 
 export default function Portfolio(){
     return (
-        <div>
-            <h1>My Portfolio</h1>
+        <div className="container mx-auto">
+            <h1 className="my-4">My Portfolio</h1>
             <Project projects={projectsArr}/>
         </div>
     );
