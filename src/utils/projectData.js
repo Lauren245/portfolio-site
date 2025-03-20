@@ -20,7 +20,7 @@
             deployedLink: "#" 
         },
         {
-            imageSrc: "/src/assets/headshot.jpg",
+            imageSrc: "/src/assets/projectImages/Weather-Dashboard-Demo-Image.jpg",
             title: "Weather Dashboard",
             skills: "TypeScript",
             gitHubLink: "https://github.com/Lauren245/Weather-Dashboard",

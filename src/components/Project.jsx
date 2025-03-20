@@ -14,11 +14,13 @@ function Project({projects}){
         3.  GitHub link 
         4. deployed link*/
 
+//NOTE: for screenshots use the resolution 2192x1029
+
     return(
         <>
             <div className='row'>
                 {projects.map((project, index) => (
-                    <div key={index} className='col-lg-4 col-md-6 col-sm-12 p-3 mb-2'>
+                    <div key={index} className='col-lg-6 col-md-6 col-sm-12 p-3 mb-2'>
                         <div className="card text-bg-dark">
                             <img src={project.imageSrc} className="card-img" alt={project.title} />
                             <div className="card-img-overlay">
@@ -41,7 +43,7 @@ function Project({projects}){
                                     >
                                         Deployed Site
                                     </a>
-                                <p className="card-text">Languages Here</p>
+                                <p className="card-text">{project.skills}</p>
                             </div>
                         </div>
                     </div>
