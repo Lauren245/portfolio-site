@@ -6,7 +6,7 @@
     4. deployed link*/
     const projectsArr = [
         {
-            imageSrc: "/src/assets/headshot.jpg",
+            imageSrc: "/src/assets/projectImages/cars-and-trucks-demo-image.jpg",
             title: "Cars and Trucks", 
             skills: "TypeScript, Inquirer.js", 
             gitHubLink: "https://github.com/Lauren245/Cars-and-Trucks", 
