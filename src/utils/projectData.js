@@ -6,6 +6,8 @@
     4. deployed link*/
 
     //image formatting
+    // image should be 2191 X 1028
+
     // /src/assets/projectImages/<image name>.jpg
     const projectsArr = [
         {
@@ -38,11 +40,11 @@
             deployedLink: "https://wevents.onrender.com/" //!!! Is deployed, but currently does not work. The Database needs to be refactored
         },
         {
-            imageSrc: "/src/assets/headshot.jpg",
+            imageSrc: "/src/assets/projectImages/book-search-engine-demo-image.jpg",
             title: "Book Search Engine",
             skills: "TypeScipt, 3rd-Party APIs, GraphQL, MongoDB",
-            gitHubLink: "https://github.com/Lauren245",
-            deployedLink: "#"
+            gitHubLink: "https://github.com/Lauren245/Book-Search-Engine",
+            deployedLink: "https://book-search-engine-62x0.onrender.com"
         },
         {
             imageSrc: "/src/assets/headshot.jpg",
