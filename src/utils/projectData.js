@@ -34,13 +34,13 @@
             imageSrc: "/src/assets/projectImages/wevents-demo-image.jpg",
             title: "Wevents",
             skills: "TypeScript, 3rd-Party APIs, routes",
-            gitHubLink: "https://github.com/Lauren245",
+            gitHubLink: "https://github.com/Lauren245/Wevents",
             deployedLink: "https://wevents.onrender.com/" //!!! Is deployed, but currently does not work. The Database needs to be refactored
         },
         {
             imageSrc: "/src/assets/headshot.jpg",
-            title: "Placeholder Card 5",
-            skills: "Skills Here",
+            title: "Book Search Engine",
+            skills: "TypeScipt, 3rd-Party APIs, GraphQL, MongoDB",
             gitHubLink: "https://github.com/Lauren245",
             deployedLink: "#"
         },
