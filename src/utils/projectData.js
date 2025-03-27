@@ -31,11 +31,11 @@
             deployedLink: "https://weather-dashboard-ktb0.onrender.com/"
         },
         {
-            imageSrc: "/src/assets/headshot.jpg",
-            title: "Placeholder Card 4",
-            skills: "Skills Here",
+            imageSrc: "/src/assets/projectImages/wevents-demo-image.jpg",
+            title: "Wevents",
+            skills: "TypeScript, 3rd-Party APIs, routes",
             gitHubLink: "https://github.com/Lauren245",
-            deployedLink: "#"
+            deployedLink: "https://wevents.onrender.com/" //!!! Is deployed, but currently does not work. The Database needs to be refactored
         },
         {
             imageSrc: "/src/assets/headshot.jpg",
@@ -52,6 +52,6 @@
             deployedLink: "#"
         }
     ];
-    
+    //TODO: add some C# projects to this list
     
     export default projectsArr
