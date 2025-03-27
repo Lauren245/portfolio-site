@@ -5,10 +5,10 @@
     3.  GitHub link 
     4. deployed link*/
 
-    //image formatting
-    // image should be 2191 X 1028
+    //image formatting: image should be 2191 X 1028
 
-    // /src/assets/projectImages/<image name>.jpg
+    // Generic path for images: /src/assets/projectImages/<image name>.jpg
+
     const projectsArr = [
         {
             imageSrc: "/src/assets/projectImages/cars-and-trucks-demo-image.jpg",
@@ -37,21 +37,21 @@
             title: "Wevents",
             skills: "TypeScript, 3rd-Party APIs, routes",
             gitHubLink: "https://github.com/Lauren245/Wevents",
-            deployedLink: "https://wevents.onrender.com/" //!!! Is deployed, but currently does not work. The Database needs to be refactored
+            deployedLink: "https://wevents.onrender.com/" //!!! App is deployed, but currently does not work. The Database needs to be refactored
         },
         {
             imageSrc: "/src/assets/projectImages/book-search-engine-demo-image.jpg",
             title: "Book Search Engine",
-            skills: "TypeScipt, 3rd-Party APIs, GraphQL, MongoDB",
+            skills: "TypeScipt, React, 3rd-Party APIs, GraphQL, MongoDB",
             gitHubLink: "https://github.com/Lauren245/Book-Search-Engine",
             deployedLink: "https://book-search-engine-62x0.onrender.com"
         },
         {
-            imageSrc: "/src/assets/headshot.jpg",
-            title: "Placeholder Card 6",
-            skills: "Skills Here",
-            gitHubLink: "https://github.com/Lauren245",
-            deployedLink: "#"
+            imageSrc: "/src/assets/projectImages/candidate-search-demo-image.jpg",
+            title: "Candidate Search",
+            skills: "TypeScript, React, Vite, CSS, 3rd-Party API",
+            gitHubLink: "https://github.com/Lauren245/Candidate-Search",
+            deployedLink: "https://candidate-search-vbhl.onrender.com/"
         }
     ];
     //TODO: add some C# projects to this list
