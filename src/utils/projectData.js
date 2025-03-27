@@ -4,6 +4,9 @@
     2. text of languages used
     3.  GitHub link 
     4. deployed link*/
+
+    //image formatting
+    // /src/assets/projectImages/<image name>.jpg
     const projectsArr = [
         {
             imageSrc: "/src/assets/projectImages/cars-and-trucks-demo-image.jpg",
@@ -13,7 +16,8 @@
             deployedLink: "#"
         },
         {
-            imageSrc: "/src/assets/headshot.jpg",
+           
+            imageSrc: "/src/assets/projectImages/employee-cms-demo-image.jpg",
             title: "Employee Tracker CMS", 
             skills: "TypeScript, Inquirer.js, PostgreSQL", 
             gitHubLink: "https://github.com/Lauren245/Employee-Tracker-CMS",
