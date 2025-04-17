@@ -21,7 +21,7 @@ function Project({projects}){
             <div className='row'>
                 {projects.map((project, index) => (
                     <div key={index} className='col-lg-6 col-md-6 col-sm-12 p-3 mb-2'>
-                        <div className="card text-bg-dark">
+                        <div className="card text-bg-dark custom-card">
                             <img src={project.imageSrc} className="card-img" alt={project.title} />
                             <div className="card-img-overlay">
                                 <span>

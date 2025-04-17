@@ -11,11 +11,11 @@
 
     const projectsArr = [
         {
-            imageSrc: "/src/assets/projectImages/cars-and-trucks-demo-image.jpg",
-            title: "Cars and Trucks", 
-            skills: "TypeScript, Inquirer.js", 
-            gitHubLink: "https://github.com/Lauren245/Cars-and-Trucks", 
-            deployedLink: "#"
+            imageSrc: "/src/assets/projectImages/mimic-mike-demo-image.jpg",
+            title: "Mimic Mike", 
+            skills: "TypeScript, MERN Stack", 
+            gitHubLink: "https://github.com/els-or/Mimic-Mike", 
+            deployedLink: "https://mimic-mike.onrender.com/"
         },
         {
            
