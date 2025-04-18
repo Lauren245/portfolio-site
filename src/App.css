@@ -10,6 +10,9 @@ main {
   background: linear-gradient(135deg, #e0f7fa, #fce4ec);
 } */
 body {
-  background-color: #f4f6f9;
+  /* background-color: #f4f6f9; */
+  background: linear-gradient(to right, #fefae0, #fff3b0, #cce3e3);
+  font-family: 'Open Sans', sans-serif; /* For body */
+
   padding-bottom: 60px;
 }
