@@ -1,3 +1,5 @@
+import profilePic from "../assets/images/headshot.jpg"
+
 export default function About() {
     return (
       <div className="container my-5">
@@ -6,7 +8,7 @@ export default function About() {
           {/* Image Column */}
           <div className="profile-pic col-md-5 text-center mb-4 mb-md-0">
             <img
-              src="./src/assets/headshot.jpg"
+              src={profilePic}
               alt="Lauren Moore's headshot"
               className="img-fluid rounded shadow"
               style={{ maxWidth: "350px" }}
