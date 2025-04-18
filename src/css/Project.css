@@ -17,6 +17,7 @@
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     position: relative;
     overflow: hidden;
+    z-index: 0;
 }
 
 .custom-card .card-img,
@@ -48,7 +49,7 @@
 
 /*Text overlay styles*/
 .custom-card .card-img-overlay {
-    z-index: 2;
+    z-index: 1; /* Keep it above the image, but below global UI elements like footer */
     color: white;
     opacity: 0;
     transform: translateY(20px);

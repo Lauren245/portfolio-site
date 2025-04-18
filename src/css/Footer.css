@@ -3,6 +3,7 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+    z-index: 10;
 }
 
 footer a:hover{
@@ -10,3 +11,4 @@ footer a:hover{
     color:#5d83d4 !important;
     text-decoration: none !important;
 }
+
