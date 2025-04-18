@@ -145,9 +145,12 @@ function Form(){
                     </div>
                 </div>
 
-                <div className="row">
-                    <span className="align-items-center"><button type="submit" className='btn btn-primary col-6'>Submit</button></span>
-                </div>                
+                <div className="row pb-3">
+                    <div className="col-2"></div> {/* Empty column to match label spacing */}
+                    <div className="col-6">
+                        <button type="submit" className="btn btn-primary w-100">Submit</button>
+                    </div>
+                </div>               
             </form>
             {errorMessage && (
                 <div>
