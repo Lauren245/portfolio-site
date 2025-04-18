@@ -86,7 +86,7 @@ function Form(){
             <div className="container py-5">
                 {/*TODO: Move style below to css file*/}
                 <div className='card shadow-sm mx-auto border-0'style={{maxWidth: '700px'}}>
-                    <div className='card-body'>
+                    <div className='card-body p-4'>
                         <form onSubmit={handleFormSubmit}>
                             {/*Name Field*/}
                             <div className="mb-3">
@@ -144,8 +144,8 @@ function Form(){
                             </div>
 
                             {/*Submit Button*/}
-                            <div className="d-grid">
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                            <div className="d-grid d-md-flex justify-content-md-center">
+                                <button type="submit" className="form-btn px-5">Submit</button>
                             </div>               
                         </form>
                     </div>

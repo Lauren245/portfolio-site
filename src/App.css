@@ -15,8 +15,8 @@ body {
   padding-bottom: 60px;
 }
 
-/* ******Resume page buttons******* */
-.download-resume-btn, .view-resume-btn {
+/* ******custom buttons******* */
+.form-btn, .download-resume-btn, .view-resume-btn {
   background-color: #3b7f7f;
   color: #ffffff;
   border: none;
@@ -29,13 +29,13 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.20);
 }
 
-.download-resume-btn:hover,
+.form-btn:hover, .download-resume-btn:hover,
 .view-resume-btn:hover {
   background-color: #2e6666;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* lift on hover */
 }
 
-.download-resume-btn:active,
+.form-btn:active, .download-resume-btn:active,
 .view-resume-btn:active {
   transform: scale(0.97);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); 
