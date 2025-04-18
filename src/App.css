@@ -6,13 +6,38 @@
 main {
   padding-bottom: 4rem;
 }
-/* body {
-  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
-} */
+
 body {
   /* background-color: #f4f6f9; */
   background: linear-gradient(to right, #fefae0, #fff3b0, #cce3e3);
-  font-family: 'Open Sans', sans-serif; /* For body */
+  font-family: 'Open Sans', sans-serif;
 
   padding-bottom: 60px;
 }
+
+/* ******Resume page buttons******* */
+.download-resume-btn, .view-resume-btn {
+  background-color: #3b7f7f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  margin: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.20);
+}
+
+.download-resume-btn:hover,
+.view-resume-btn:hover {
+  background-color: #2e6666;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* lift on hover */
+}
+
+.download-resume-btn:active,
+.view-resume-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); 
+}
+

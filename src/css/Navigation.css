@@ -4,6 +4,9 @@
 
 nav {
     background-color: #3b7f7f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-bottom: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* background-image: linear-gradient(to bottom, #3b7f7f, #499393); */
 }
 
 .navbar-nav .nav-link.active {
