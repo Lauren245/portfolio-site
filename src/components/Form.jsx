@@ -83,75 +83,73 @@ function Form(){
                     </div>
                 </div>
             </div>
+            <div className="container py-5">
+                <div className='card shadow-sm mx-auto border-0'style={{maxWidth: '700px'}}>
+                    <div className='card-body'>
+                        <form onSubmit={handleFormSubmit}>
+                            {/*Name Field*/}
+                            <div className="mb-3">
+                                <label htmlFor="name" className="form-label">
+                                    Name <span className="text-danger">*</span>
+                                </label>
 
-            <form onSubmit={handleFormSubmit} className="pt-4">
-                <div className="row g-3 align-items-center pb-3">
-                    <div className="col-2">
-                        <label htmlFor="name" className="col-form-auto">
-                            Name <span className="text-danger">*</span>
-                        </label>
-                    </div>
-                    <div className="col-6">
-                        <input
-                            className="form-control"
-                            value={name}
-                            name="name"
-                            onChange={handleInputChange}
-                            type="text"
-                            placeholder="name"
-                            required
-                        />
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="name"
+                                    name="name"
+                                    value={name}
+                                    onChange={handleInputChange}
+                                    placeholder="Name"
+                                    required
+                                />
+                            </div>
+
+                            {/*Email Field*/}
+                            <div className="mb-3">
+                                <label htmlFor="email" className="form-label">
+                                    Email Address <span className="text-danger">*</span>
+                                </label>
+
+                                <input 
+                                    type="email"
+                                    className="form-control"
+                                    id="email"
+                                    name="email"
+                                    value={email}
+                                    onChange={handleInputChange}
+                                    onBlur={handleOnBlur}
+                                    placeholder="Email Address"
+                                    required
+                                />
+                            </div>
+
+                            {/*Message Field*/}
+                            <div className="mb-4">
+                                <label htmlFor="message" className="form-label">
+                                    Message <span className="text-danger">*</span>
+                                </label>
+
+                                <textarea 
+                                        className="form-control"
+                                        id="message" 
+                                        value={message}
+                                        name="message" 
+                                        onChange={handleInputChange}
+                                        rows={4} 
+                                        placeholder="Type your message here..."
+                                        required
+                                />
+                            </div>
+
+                            {/*Submit Button*/}
+                            <div className="d-grid">
+                                <button type="submit" className="btn btn-primary">Submit</button>
+                            </div>               
+                        </form>
                     </div>
                 </div>
-
-                <div className="row g-3 align-items-center pb-3">
-                    <div className="col-2">
-                        <label htmlFor="email" className="col-form-auto">
-                            Email Address <span className="text-danger">*</span>
-                        </label>
-                    </div>
-                    <div className="col-6">
-                        <input 
-                            className="form-control"
-                            value={email}
-                            name="email"
-                            onChange={handleInputChange}
-                            onBlur={handleOnBlur}
-                            type="email"
-                            placeholder="Email Address"
-                            required
-                        />
-                    </div>
-                </div>
-
-                <div className="row g-3 pb-3">
-                    <div className="col-2">
-                        <label htmlFor="message" className="col-form-label">
-                            Message <span className="text-danger">*</span>
-                        </label>
-                    </div>
-                    <div className="col-6">
-                        <textarea 
-                                className="form-control"
-                                id="message" 
-                                value={message}
-                                name="message" 
-                                onChange={handleInputChange}
-                                rows={4} 
-                                cols={20} 
-                                placeholder="Type your message here..."
-                                required
-                            />
-                    </div>
-                </div>
-
-                <div className="row pb-3">
-                    <div className="col-2"></div> {/* Empty column to match label spacing */}
-                    <div className="col-6">
-                        <button type="submit" className="btn btn-primary w-100">Submit</button>
-                    </div>
-                </div>               
-            </form>
+            </div>
             {errorMessage && (
                 <div>
                     <p className="error-message text-danger">{errorMessage}</p>
