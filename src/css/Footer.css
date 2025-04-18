@@ -1,5 +1,18 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    background-color: #3b7f7f;
+    color: white;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3); /*cast shadow updward*/
+    border-top: 1px solid rgba(255, 255, 255,0.1);
+    /* background-image: linear-gradient(to top, #3b7f7f, #499393); */
+}
+
 footer a:hover{
-    /* TODO: Change this color to whatever ends up being the accent theme for the site.*/
-    color:#5d83d4 !important;
+    color:#fff3b0 !important;
     text-decoration: none !important;
 }
+

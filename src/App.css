@@ -1,42 +1,43 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+main {
+  padding-bottom: 4rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  /* background-color: #f4f6f9; */
+  background: linear-gradient(to right, #fefae0, #fff3b0, #cce3e3);
+  font-family: 'Open Sans', sans-serif;
+
+  padding-bottom: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* ******custom buttons******* */
+.form-btn, .download-resume-btn, .view-resume-btn {
+  background-color: #3b7f7f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  margin: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.20);
 }
 
-.card {
-  padding: 2em;
+.form-btn:hover, .download-resume-btn:hover,
+.view-resume-btn:hover {
+  background-color: #2e6666;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* lift on hover */
 }
 
-.read-the-docs {
-  color: #888;
+.form-btn:active, .download-resume-btn:active,
+.view-resume-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); 
 }
+
