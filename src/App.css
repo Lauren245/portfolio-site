@@ -6,3 +6,10 @@
 main {
   padding-bottom: 4rem;
 }
+/* body {
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+} */
+body {
+  background-color: #f4f6f9;
+  padding-bottom: 60px;
+}

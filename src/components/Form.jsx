@@ -84,6 +84,7 @@ function Form(){
                 </div>
             </div>
             <div className="container py-5">
+                {/*TODO: Move style below to css file*/}
                 <div className='card shadow-sm mx-auto border-0'style={{maxWidth: '700px'}}>
                     <div className='card-body'>
                         <form onSubmit={handleFormSubmit}>
