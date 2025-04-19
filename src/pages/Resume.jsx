@@ -3,18 +3,7 @@ export default function Resume(){
     return(
         <div className="container mx-auto">
             <h1 className="my-5">My Resume</h1>
-
-            {/* PDF preview */}
-            <div className="shadow rounded overflow-hidden">
-                <iframe
-                src={resumePdf}
-                width="100%"
-                height="600px"
-                className="border rounded w-100"
-                title="Resume Preview"
-                />
-            </div>
-            {/*TODO: add button click effect*/}
+            
             {/* Button group with max-width and spacing */}
             <div className="resume-btn-group d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4 gap-sm-5 my-5 mx-auto">
                 <a href={resumePdf} download>
@@ -28,6 +17,17 @@ export default function Resume(){
                         View Resume PDF
                     </button>
                 </a>
+            </div>
+
+            {/* PDF preview */}
+            <div className="shadow rounded overflow-hidden">
+                <iframe
+                src={resumePdf}
+                width="100%"
+                height="600px"
+                className="border rounded w-100"
+                title="Resume Preview"
+                />
             </div>
         </div>
     );
