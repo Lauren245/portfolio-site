@@ -3,10 +3,10 @@ import projectsArr from '../utils/projectData.js';
 
 
 export default function Portfolio(){
-    return (
-        <div className="container mx-auto">
-            <h1 className="my-5">My Portfolio</h1>
-            <Project projects={projectsArr}/>
-        </div>
-    );
+  return (
+    <div className="container mx-auto">
+      <h1 className="my-5">My Portfolio</h1>
+      <Project projects={projectsArr}/>
+    </div>
+  );
 }

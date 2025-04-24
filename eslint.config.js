@@ -33,11 +33,11 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-        // 🔹 Formatting & Style
+      //Formatting & Style
       'no-multi-spaces': 'error',
       'quotes': ['error', 'single', { avoidEscape: true }],
       'semi': ['error', 'always'],
-      // 'indent': ['error', 2],
+      'indent': ['error', 2],
       'object-curly-spacing': ['error', 'always'],
       'comma-dangle': ['error', 'always-multiline'],
       'arrow-spacing': ['error', { before: true, after: true }],

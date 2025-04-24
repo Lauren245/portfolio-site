@@ -1,9 +1,9 @@
 import Nav from './Navigation';
 
 function Header(){
-    return(
-        <Nav />
-    );
+  return(
+    <Nav />
+  );
 };
 
 export default Header;

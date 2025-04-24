@@ -7,11 +7,11 @@ function App() {
 
   return (
     <>
-        <Header />
-        <main className='mx-3'>
-          <Outlet />
-        </main>
-        <Footer />
+      <Header />
+      <main className='mx-3'>
+        <Outlet />
+      </main>
+      <Footer />
     </>
 
   );

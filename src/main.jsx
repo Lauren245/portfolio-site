@@ -12,32 +12,32 @@ import Resume from './pages/Resume.jsx';
 
 //define the routes
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <App />,
-        errorElement: <Error />,
-        children: [
-            {
-                index: true,
-                element: <About />,
-            },
-            {
-                path: '/Portfolio',
-                element: <Portfolio />,
-            },
-            {
-                path: '/Contact',
-                element: <Contact />,
-            },
-            {
-                path: '/Resume',
-                element: <Resume />,
-            },
-        ],
-    },
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <About />,
+      },
+      {
+        path: '/Portfolio',
+        element: <Portfolio />,
+      },
+      {
+        path: '/Contact',
+        element: <Contact />,
+      },
+      {
+        path: '/Resume',
+        element: <Resume />,
+      },
+    ],
+  },
 ]);
 
 // createRoot(document.getElementById('root')).render(<App />, )
 createRoot(document.getElementById('root')).render(
-    <RouterProvider router={router} />,
+  <RouterProvider router={router} />,
 );
