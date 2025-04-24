@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import '../css/Project.css';
 
-function Project({projects}){
+function Project({ projects }){
 // WHEN I am presented with the Portfolio section
 // THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
 
@@ -62,7 +62,7 @@ function Project({projects}){
                 title: PropTypes.string.isRequired,
                 gitHubLink: PropTypes.string.isRequired,
                 deployedLink: PropTypes.string.isRequired,
-            })
+            }),
         ).isRequired,
     };
 
