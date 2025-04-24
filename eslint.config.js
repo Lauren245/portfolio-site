@@ -41,6 +41,16 @@ export default [
       'object-curly-spacing': ['error', 'always'],
       'comma-dangle': ['error', 'always-multiline'],
       'arrow-spacing': ['error', { before: true, after: true }],
+
+      //Best Practices
+      //'no-console': 'warn',
+      'eqeqeq': ['error', 'always'],
+      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      'no-duplicate-imports': 'error',
+      'prefer-const': ['error', {
+        destructuring: 'all',
+        ignoreReadBeforeAssign: true,
+      }],
     },
   },
 ];
