@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { validateEmail  } from '../utils/validation';
+import { validateEmail } from '../utils/validation';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -29,24 +29,24 @@ function Form(){
                 setMessage(inputValue);
                 break;
             default:
-                setErrorMessage("an unknown error occured. Please try again.");
+                setErrorMessage('an unknown error occured. Please try again.');
         };
     };
 
     const handleOnBlur = () => {
-        if(!validateEmail(email) && email !== ""){
-            setErrorMessage("invalid email");
+        if(!validateEmail(email) && email !== ''){
+            setErrorMessage('invalid email');
         }
         else{
-            setErrorMessage("");
+            setErrorMessage('');
         }
-    }
+    };
 
     const handleFormSubmit = (e) => {
        e.preventDefault(); 
        //TODO: add call to validation code if desired
        if(!validateEmail(email) || !name){
-            setErrorMessage("invalid name or email");
+            setErrorMessage('invalid name or email');
        }
 
        //This will eventually redirect to a page with contact information on it, but that is for a later version
@@ -64,7 +64,7 @@ function Form(){
             <div className="toast-container">
                 <div
                     className={`toast align-items-center text-white bg-success border-0 ${
-                        showToast ? "show" : "hide"
+                        showToast ? 'show': 'hide'
                     }`}
                     role="alert"
                     aria-live="assertive"

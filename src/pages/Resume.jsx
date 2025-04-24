@@ -1,4 +1,4 @@
-import resumePdf from '../assets/Lauren_Moore_Resume_2025.pdf'
+import resumePdf from '../assets/Lauren_Moore_Resume_2025.pdf';
 export default function Resume(){
     return(
         <div className="container mx-auto">

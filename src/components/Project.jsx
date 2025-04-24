@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import PropTypes from 'prop-types';
 
-import "../css/Project.css"
+import '../css/Project.css';
 
 function Project({projects}){
 // WHEN I am presented with the Portfolio section

@@ -9,7 +9,7 @@ export default function About() {
               src="/images/headshot.jpg"
               alt="Lauren Moore's headshot"
               className="img-fluid rounded shadow"
-              style={{ maxWidth: "300px" }}
+              style={{ maxWidth: '300px' }}
             />
           </div>
   

@@ -14,7 +14,7 @@ function App() {
         <Footer />
     </>
 
-  )
+  );
 }
 
-export default App
+export default App;
