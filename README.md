@@ -21,6 +21,10 @@ I'm a full-stack web developer with a background in game QA. Although I'm curren
 - 😄 Pronouns are she/her
   
 - ⚡Fun fact: I love performing in local musical theatre productions!
+- 
+## Stats
+![Lauren's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Lauren245&show_icons=true&theme=radical)
+
 
 ## Resources for this project
 
